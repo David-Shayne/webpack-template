@@ -3,7 +3,6 @@ const path = require("path");
 const htmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-	mode: "development",
 	entry: "./src/index.js",
 	output: {
 		filename: "main.js",
@@ -16,11 +15,6 @@ module.exports = {
 			template: "./src/index.html",
 		}),
 	],
-
-	devtool: "eval-source-map",
-	devServer: {
-		watchFiles: ["./src/index.html"],
-	},
 
 	module: {
 		rules: [
